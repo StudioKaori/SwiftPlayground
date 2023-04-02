@@ -8,15 +8,22 @@
 import SwiftUI
 
 struct ContentView: View {
-
+  
   var body: some View {
     VStack {
       NavigationLink {
         ContentView3()
       } label: {
-        Text("Swipe down to load and pull to refresh")
+        Text("LIST: Swipe down to load and pull to refresh")
+      }
+      
+      NavigationLink {
+        SkipToThePosition()
+      } label: {
+        Text("LIST: Skip to the position")
       }
 
+      
     }
   }
 }

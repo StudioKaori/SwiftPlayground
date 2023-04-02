@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		431A91FC29D71B39001A4BE3 /* PullToRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431A91FB29D71B39001A4BE3 /* PullToRefresh.swift */; };
+		431A91FE29D9B9E4001A4BE3 /* SkipToThePosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431A91FD29D9B9E4001A4BE3 /* SkipToThePosition.swift */; };
 		43F2B79E29B4D1A800C063B6 /* SwiftuiPlaygroundApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F2B79D29B4D1A800C063B6 /* SwiftuiPlaygroundApp.swift */; };
 		43F2B7A029B4D1A800C063B6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F2B79F29B4D1A800C063B6 /* ContentView.swift */; };
 		43F2B7A229B4D1A900C063B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43F2B7A129B4D1A900C063B6 /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 
 /* Begin PBXFileReference section */
 		431A91FB29D71B39001A4BE3 /* PullToRefresh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullToRefresh.swift; sourceTree = "<group>"; };
+		431A91FD29D9B9E4001A4BE3 /* SkipToThePosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkipToThePosition.swift; sourceTree = "<group>"; };
 		43F2B79A29B4D1A800C063B6 /* SwiftuiPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftuiPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43F2B79D29B4D1A800C063B6 /* SwiftuiPlaygroundApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftuiPlaygroundApp.swift; sourceTree = "<group>"; };
 		43F2B79F29B4D1A800C063B6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 				43F2B79D29B4D1A800C063B6 /* SwiftuiPlaygroundApp.swift */,
 				43F2B79F29B4D1A800C063B6 /* ContentView.swift */,
 				431A91FB29D71B39001A4BE3 /* PullToRefresh.swift */,
+				431A91FD29D9B9E4001A4BE3 /* SkipToThePosition.swift */,
 				43F2B7A129B4D1A900C063B6 /* Assets.xcassets */,
 				43F2B7A329B4D1A900C063B6 /* Preview Content */,
 			);
@@ -142,6 +145,7 @@
 			files = (
 				43F2B7A029B4D1A800C063B6 /* ContentView.swift in Sources */,
 				431A91FC29D71B39001A4BE3 /* PullToRefresh.swift in Sources */,
+				431A91FE29D9B9E4001A4BE3 /* SkipToThePosition.swift in Sources */,
 				43F2B79E29B4D1A800C063B6 /* SwiftuiPlaygroundApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -14,34 +14,34 @@ struct ContentView3: View {
   
   var body: some View {
     
- 
-      List {
-        //アイテム表示領域
-        ForEach.init(self.viewModel.items, id: \.self) { value in
-          Text(value)
-            .frame(height: 50)
-            .frame(maxWidth: .infinity)
-            .background(Color.init(white: 0.9).clipShape(RoundedRectangle(cornerRadius: 8))
-              .shadow(radius: 4))
-            .padding(4)
-            .onAppear() {
-              if value == self.viewModel.items.last {
-                self.viewModel.loadMore()
-              }
-              
-//              if value == self.viewModel.items.first {
-//                self.viewModel.appendItemsOnTop()
-//              }
+    
+    List {
+      //アイテム表示領域
+      ForEach.init(self.viewModel.items, id: \.self) { value in
+        Text(value)
+          .frame(height: 50)
+          .frame(maxWidth: .infinity)
+          .background(Color.init(white: 0.9).clipShape(RoundedRectangle(cornerRadius: 8))
+            .shadow(radius: 4))
+          .padding(4)
+          .onAppear() {
+            if value == self.viewModel.items.last {
+              self.viewModel.loadMore()
             }
-        }
-      
-        
+            
+            //              if value == self.viewModel.items.first {
+            //                self.viewModel.appendItemsOnTop()
+            //              }
+          }
       }
-      .refreshable {
-        self.viewModel.appendItemsOnTop()
-      }
       
-  
+      
+    }
+    .refreshable {
+      self.viewModel.appendItemsOnTop()
+    }
+    
+    
     
     
   }
