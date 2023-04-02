@@ -11,10 +11,10 @@ struct SkipToThePosition: View {
   var body: some View {
     ScrollViewReader { reader in
       Button("25行目にスクロール") {
-        reader.scrollTo(25, anchor: .top)
-//        withAnimation(.spring(response: 0.5, dampingFraction: 0.5, blendDuration: 0)) {
-//          reader.scrollTo(25, anchor: .top)
-//        }
+        //reader.scrollTo(25, anchor: .top)
+        withAnimation(.spring(response: 0.5, dampingFraction: 0.5, blendDuration: 0)) {
+          reader.scrollTo(25, anchor: .top)
+        }
       }
       List {
         ForEach(1..<50, id: \.self) { index in
@@ -22,7 +22,11 @@ struct SkipToThePosition: View {
             .id(index)
         }
       }
+      .onAppear {
+        reader.scrollTo(35, anchor: .top)
+      }
     }
+    
   }
 }
 
