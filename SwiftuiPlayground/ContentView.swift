@@ -23,6 +23,18 @@ struct ContentView: View {
         Text("LIST: Skip to the position")
       }
 
+      NavigationLink {
+        KeepScrollPosition()
+      } label: {
+        Text("LIST: KeepScrollPosition")
+      }
+      
+      NavigationLink {
+        ImageUploaderWithLocation()
+      } label: {
+        Text("ImageUploaderWithLocationView")
+      }
+
       
     }
   }
