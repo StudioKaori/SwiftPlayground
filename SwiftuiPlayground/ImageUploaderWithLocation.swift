@@ -3,7 +3,7 @@
 //  SwiftuiPlayground
 //
 //  Created by Kaori Persson on 2023-04-10.
-//
+//https://www.felixlarsen.com/blog/photo-metadata-phpickerview
 import SwiftUI
 import MapKit
 
