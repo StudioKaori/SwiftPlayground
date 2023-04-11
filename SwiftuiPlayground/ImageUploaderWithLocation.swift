@@ -89,12 +89,8 @@ struct ImageUploaderWithLocation: View {
             .overlay(Circle().stroke(Color.white, lineWidth: 4))
             .shadow(radius: 10)
             .padding(8)
-            .onAppear {
-              let coordinate = CLLocationCoordinate2D(latitude: region.center.latitude + region.span.latitudeDelta * 0.30, longitude: region.center.longitude)
-              getLocationName(for: coordinate) { locationName in
-                  print(locationName ?? "Unknown location")
-              }
-            }
+          
+          Text(self.locationName)
         }
         Spacer()
         Button(action: {
@@ -113,6 +109,14 @@ struct ImageUploaderWithLocation: View {
       
     }.sheet(isPresented: $showSheet) {
       CustomPhotoPickerView(selectedImage: $selectedImage, date: $date, location: $region.center)
+    }
+    .onChange(of: self.selectedImage) { _ in
+      let coordinate = CLLocationCoordinate2D(latitude: region.center.latitude + region.span.latitudeDelta * 0.30, longitude: region.center.longitude)
+      getLocationName(for: coordinate) { locationName in
+        if let photoLocationName = locationName {
+          self.locationName = photoLocationName
+        }
+      }
     }
   }
 }
